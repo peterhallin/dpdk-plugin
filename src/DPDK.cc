@@ -129,10 +129,10 @@ inline int DPDK::port_init(uint16_t port)
 					{
 						.rss_key = rss_key,
 						.rss_key_len = 52,
-						.rss_hf = ETH_RSS_NONFRAG_IPV4_TCP | ETH_RSS_NONFRAG_IPV6_TCP |
-	                              ETH_RSS_NONFRAG_IPV4_UDP | ETH_RSS_NONFRAG_IPV6_UDP |
-	                              ETH_RSS_NONFRAG_IPV4_OTHER | ETH_RSS_NONFRAG_IPV6_OTHER |
-	                              ETH_RSS_FRAG_IPV4 | ETH_RSS_FRAG_IPV6,
+						.rss_hf = RTE_ETH_RSS_NONFRAG_IPV4_TCP | RTE_ETH_RSS_NONFRAG_IPV6_TCP |
+	                              RTE_ETH_RSS_NONFRAG_IPV4_UDP | RTE_ETH_RSS_NONFRAG_IPV6_UDP |
+	                              RTE_ETH_RSS_NONFRAG_IPV4_OTHER | RTE_ETH_RSS_NONFRAG_IPV6_OTHER |
+	                              RTE_ETH_RSS_FRAG_IPV4 | RTE_ETH_RSS_FRAG_IPV6,
 					},
 			},
 	};
