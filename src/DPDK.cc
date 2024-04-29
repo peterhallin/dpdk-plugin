@@ -114,7 +114,7 @@ inline int DPDK::port_init(uint16_t port)
 	struct rte_eth_conf port_conf = {
 		.rxmode =
 			{
-				.mq_mode = ETH_MQ_RX_RSS,
+				.mq_mode = RTE_ETH_MQ_RX_RSS,
 #if RTE_VERSION >= RTE_VERSION_NUM(21,8,0,0)
 				.mtu = JUMBO_FRAME_MAX_SIZE,
 #else
